@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsiv.css">
+    <title>Modelo</title>
+</head>
+<body>
+<!-- NAV -->
+<header class="nav">
+  <a href="#" class="logo">exemplo.</a>
+
+   <!-- um único botão para abrir/fechar -->
+  <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- OVERLAY MENU (desktop e mobile) -->
+<nav class="menu" aria-hidden="true">
+
+  <div class="menu__inner">
+    <ul class="menu__list" role="menu">
+      <li><a role="menuitem" href="#criacao-de-marca" data-close>Criação de Marca</a></li>
+      <li><a role="menuitem" href="#deliver" data-close>Cases</a></li>
+      <li><a role="menuitem" href="#fullseven" data-close>Método FullSeven</a></li>
+      <li><a role="menuitem" href="#IDEIA" data-close>Fale Conosco</a></li>
+    </ul>
+
+    <div class="menu__footer">
+      <div class="menu__social">
+        <a href="https://www.instagram.com/alagim_jagun" aria-label="Instagram">
+    <span class="icon"
+      style="--icon-url: url('https://img.icons8.com/ios/50/ffffff/instagram-new.png');"></span>
+  </a>
+         <a href="https://mail.google.com/mail/?view=cm&to=Allan-moraes2011@live.com" aria-label="E-mail">
+    <span class="icon"
+      style="--icon-url: url('https://img.icons8.com/ios/50/ffffff/new-post.png');"></span>
+  </a>
+      </div>
+      <address class="menu__address">
+        <strong>Salvador</strong><br>
+        Proximo a casa de Jorge Amado<br>
+        Rua da Conquista, 132
+      </address>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+  <section class="hero" id="home" aria-label="capa">
+    <!-- vídeo opcional; se não tiver ainda, comente a tag <video> -->
+
+    <video class="hero__video" src="img/esfera2.mp4" autoplay muted loop playsinline webkit-playsinline
+        preload="auto"></video>
+   
+    <div class="hero__blob" aria-hidden="true"></div>
+
+    <div class="hero__inner">
+  <h1 class="hero__title">
+  <span class="line line-left">Toda marca é movimento,</span>
+  <span class="line line-right accent">a questão é pra onde.</span>
+</h1>
+
+</div>
+  </section>
+
+
+ <section class="manifesto" id="sobre" aria-label="manifesto">
+  <div class="manifesto__wrap">
+    <h2 class="m-title reveal">
+      Mesmo parada, sua<br>
+      <strong>marca <em>tá se movendo.</em></strong>
+    </h2>
+
+    <!-- Arcos -->
+    <div class="m-arcs" aria-hidden="true">
+      <div class="arc arc-a"></div>
+      <div class="arc arc-b"></div>
+    </div>
+
+    <div class="m-copy reveal">
+      <p>Porque o mundo gira, o público muda — e quem não se adapta, <strong>some</strong>.</p>
+      <p>A gente acredita em marcas vivas. Que se posicionam, testam, reagem.</p>
+      <p>Que têm coragem de mudar o rumo, e de bancar o que acreditam.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Seção “cresce ao rolar” -->
+<section class="grow" id="criacao-de-marca">
+  <div class="grow__wrap">
+    <figure class="grow__media">
+      <!-- use sua imagem do trem aqui -->
+      <img class="grow__img" src="img/teste1-removebg-preview.png" alt="Locomotiva — criação de marca">
+    </figure>
+
+    <div class="grow__copy">
+      <p class="eyebrow">CRIAÇÃO DE MARCA</p>
+      <h2 class="grow__title">
+        Marcas que não passam batido. <br>
+        <span class="accent">Nem pedem licença.</span>
+      </h2>
+
+      <p> A gente não entrega só logotipo bonitinho. Aqui, a criação começa com direção,
+         propósito e coragem. Do nome ao visual, tudo é pensado pra sua marca se mover com
+         força, clareza e personalidade. </p>
+
+      <p>Porque quem não sabe quem é, vira genérico — <strong>e aí já era.</strong></p>
+
+      <a href="#processo" class="btn btn--ghost">Conheça nosso processo →</a>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- SECTION · MÉTODO FULLSEVEN -->
+<section class="fullseven" id="fullseven">
+  <div class="fs-wrap">
+    <!-- Coluna esquerda -->
+    <div class="fs-left">
+      <p class="fs-eyebrow">GESTÃO DE MARCA</p>
+      <h2 class="fs-title">
+        Método <span class="accent">FullSeven®</span>
+      </h2>
+      <p class="fs-lede">
+        Com base nos sete pilares, a gente transforma sua marca pra valer — 
+        <strong>do que ela comunica ao que representa.</strong>
+      </p>
+    </div>
+
+    <!-- Centro · VÍDEO + anéis/legendas -->
+    <figure class="fs-orb">
+      <!-- VÍDEO (substitua o src) -->
+      <video
+        class="fs-video"
+        src="img/esfera1.mp4"
+        autoplay
+        muted
+        loop
+        playsinline
+        webkit-playsinline
+        preload="auto"
+      ></video>
+
+      <!-- SVG com textos circulares e arco em destaque -->
+      <svg class="ring" viewBox="0 0 600 600" aria-hidden="true">
+        <defs>
+          <path id="circleOuter" d="M300,300 m-235,0 a235,235 0 1,1 470,0 a235,235 0 1,1 -470,0" />
+          <path id="circleInner" d="M300,300 m-205,0 a205,205 0 1,1 410,0 a205,205 0 1,1 -410,0" />
+          <path id="arcSmall"   d="M300,65 A235,235 0 0 1 430,95" />
+        </defs>
+
+        <!-- anéis leves -->
+        <circle cx="300" cy="300" r="235" class="ring-stroke"/>
+        <circle cx="300" cy="300" r="205" class="ring-stroke ring-stroke--faint"/>
+
+        <!-- arco vermelho que gira via --arc-angle -->
+        <g class="ring-highlight">
+          <use href="#arcSmall" />
+          <circle cx="300" cy="65" r="6" class="dot"/>
+        </g>
+
+        <!-- rótulos (textPath) -->
+      </svg>
+    </figure>
+
+    <!-- Direita · Acordeão -->
+    <div class="fs-accordion" id="fs-acc">
+      <button class="acc-item is-open" data-angle="0">
+        <span>CheckUp</span><i aria-hidden="true"></i>
+      </button>
+      <div class="acc-panel" style="--h: 180px;">
+        <p>
+          Avaliamos cada um dos sete pilares, calculamos o seu <strong>Brandscore®</strong>
+          e escancaramos onde sua marca tá mandando bem — <em>e onde tá deixando a desejar.</em>
+        </p>
+      </div>
+
+      <button class="acc-item" data-angle="120">
+        <span>Impacto Inicial</span><i aria-hidden="true"></i>
+      </button>
+      <div class="acc-panel" style="--h: 120px;">
+        <p>Primeiras correções de rota e quick wins pra aumentar clareza e percepção de valor.</p>
+      </div>
+
+      <button class="acc-item" data-angle="240">
+        <span>Aceleração</span><i aria-hidden="true"></i>
+      </button>
+      <div class="acc-panel" style="--h: 120px;">
+        <p>Plano de 90 dias pra tracionar presença, consistência e reconhecimento.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="services" id="servicos" aria-labelledby="servicos-title">
+  <div class="services__wrap">
+    <h3 id="servicos-title" class="visually-hidden">Ações que podemos desenvolver</h3>
+
+    <!-- COLUNA -->
+    <div class="svc-col">
+      <h4 class="svc-head">Posicionamento</h4>
+      <ul class="svc-list">
+        <li>
+          <button class="svc-item"
+                  type="button"
+                  data-desc="Mapeamos contexto, diferenciais e território de marca para orientar decisões."
+          >Estratégia</button>
+        </li>
+        <li>
+          <button class="svc-item"
+                  type="button"
+                  data-desc="Guia estratégico: essência, pilares, promessas e diretrizes de marca."
+          >Plataforma</button>
+        </li>
+        <li>
+          <button class="svc-item"
+                  type="button"
+                  data-desc="Por que sua marca existe além do lucro — e como isso vira valor."
+          >Propósito</button>
+        </li>
+        <li>
+          <button class="svc-item"
+                  type="button"
+                  data-desc="Perfis reais que orientam tom, oferta e experiência em cada canal."
+          >Personas</button>
+        </li>
+      </ul>
+    </div>
+
+    <!-- COLUNA -->
+    <div class="svc-col">
+      <h4 class="svc-head">Conexão</h4>
+      <ul class="svc-list">
+        <li><button class="svc-item" type="button" data-desc="Crenças e atitudes que a marca defende e pratica.">Valores de marca</button></li>
+        <li><button class="svc-item" type="button" data-desc="Temas proprietários que sustentam conteúdo e campanhas.">Territórios</button></li>
+        <li><button class="svc-item" type="button" data-desc="Calendário e governança de conteúdo por canal e objetivo.">Linha editorial</button></li>
+        <li><button class="svc-item" type="button" data-desc="Parcerias e iniciativas que geram afinidade e relevância.">Apoio cultural</button></li>
+      </ul>
+    </div>
+
+    <!-- COLUNA -->
+    <div class="svc-col">
+      <h4 class="svc-head">Personalidade</h4>
+      <ul class="svc-list">
+        <li><button class="svc-item" type="button" data-desc="Arquétipo principal e secundário para guiar expressão e decisões.">Arquétipo</button></li>
+        <li><button class="svc-item" type="button" data-desc="Linguagem, ritmo, vocabulário e limites do que a marca fala.">Tom de Voz</button></li>
+        <li><button class="svc-item" type="button" data-desc="Narrativa de origem, crenças e convites — base de pitch e site.">Manifesto de marca</button></li>
+        <li><button class="svc-item" type="button" data-desc="Nomes, claims e mensagens-guia por público e estágio.">Identidade verbal</button></li>
+      </ul>
+    </div>
+
+    <!-- COLUNA -->
+    <div class="svc-col">
+      <h4 class="svc-head">Identidade</h4>
+      <ul class="svc-list">
+        <li><button class="svc-item" type="button" data-desc="Sistema visual completo: tipografia, cores, grid, composição.">Identidade Visual</button></li>
+        <li><button class="svc-item" type="button" data-desc="Marcas, versões, aplicações e zona de proteção.">Logotipo</button></li>
+        <li><button class="svc-item" type="button" data-desc="Criação e validação de nomes que cabem na estratégia.">Naming</button></li>
+        <li><button class="svc-item" type="button" data-desc="Implementação assistida do sistema visual em peças reais.">Design-as-a-service</button></li>
+      </ul>
+    </div>
+
+    <!-- COLUNA -->
+    <div class="svc-col">
+      <h4 class="svc-head">Relacionamento</h4>
+      <ul class="svc-list">
+        <li><button class="svc-item" type="button" data-desc="Plano por rede, papel de canal e indicadores de avanço.">Redes Sociais</button></li>
+        <li><button class="svc-item" type="button" data-desc="Fluxos de e-mail/SMS e nutrição orientada a valor.">Mailing</button></li>
+        <li><button class="svc-item" type="button" data-desc="Cocriações com creators e marcas para ampliar alcance.">Collabs</button></li>
+        <li><button class="svc-item" type="button" data-desc="Ativações com conteúdo gerado pela comunidade.">UGC</button></li>
+      </ul>
+    </div>
+
+    <!-- COLUNA -->
+    <div class="svc-col">
+      <h4 class="svc-head">Experiência</h4>
+      <ul class="svc-list">
+        <li><button class="svc-item" type="button" data-desc="Do conceito ao roteiro, a marca viva no mundo físico.">Eventos</button></li>
+        <li><button class="svc-item" type="button" data-desc="Materiais e kits para varejo e pontos de contato.">Materiais PDV</button></li>
+        <li><button class="svc-item" type="button" data-desc="Ambientes, sinalização e trilha sensorial de marca.">Ambientação</button></li>
+        <li><button class="svc-item" type="button" data-desc="Sistema para embalagens funcionais e reconhecíveis.">Embalagem</button></li>
+      </ul>
+    </div>
+
+    <!-- COLUNA -->
+    <div class="svc-col">
+      <h4 class="svc-head">Reconhecimento</h4>
+      <ul class="svc-list">
+        <li><button class="svc-item" type="button" data-desc="Mídia offline para awareness e cobertura geográfica.">Mídia Off</button></li>
+        <li><button class="svc-item" type="button" data-desc="Arquitetura de páginas focada em conversão e SEO.">Website</button></li>
+        <li><button class="svc-item" type="button" data-desc="Postura editorial para ganho orgânico e autoridade.">Blog</button></li>
+        <li><button class="svc-item" type="button" data-desc="Conceito, peças e orquestração multicanal.">Campanhas publicitárias</button></li>
+      </ul>
+    </div>
+
+    <!-- Tooltip único, reutilizado -->
+    <div class="svc-tip" role="status" aria-live="polite">
+      <div class="svc-tip__inner"></div>
+      <span class="svc-tip__arrow" aria-hidden="true"></span>
+    </div>
+  </div>
+</section>
+
+
+<section id="deliver" class="deliver">
+  <div class="deliver__stage">
+    <h2 id="deliverTitle" class="deliver__title">
+      Não é papo. <span class="accent">É entrega.</span>
+    </h2>
+  </div>
+
+  <p class="deliver__sub">
+    É só dar uma olhada no que a gente colocou pra rodar…
+  </p>
+</section>
+
+
+<!-- ====== CASES (3 cards grandes) ====== -->
+<section class="cases" id="CASE">
+  <!-- Card 1 -->
+  <article class="case-card">
+    <img src="img/case1.jpg" alt="Peça da campanha do Colégio Rosário" loading="lazy">
+    <div class="case-shade" aria-hidden="true"></div>
+    <div class="case-info">
+      <h3 class="case-title">O laboratório dos porquês.</h3>
+      <p class="case-meta">Campanha de matrículas · Colégio Rosário</p>
+      <a class="case-cta" href="#case1">Olha essa campanha! <span aria-hidden="true">→</span></a>
+    </div>
+  </article>
+
+  <!-- Card 2 -->
+  <article class="case-card">
+    <img src="img/case1.jpg" alt="Ação de lançamento de produto" loading="lazy">
+    <div class="case-shade" aria-hidden="true"></div>
+    <div class="case-info">
+      <h3 class="case-title">Lançamento que vira assunto.</h3>
+      <p class="case-meta">Go-to-market · Produto tech</p>
+      <a class="case-cta" href="#case2">Ver o case <span aria-hidden="true">→</span></a>
+    </div>
+  </article>
+
+  <!-- Card 3 -->
+  <article class="case-card">
+    <img src="img/case1.jpg" alt="Outdoor da campanha de marca" loading="lazy">
+    <div class="case-shade" aria-hidden="true"></div>
+    <div class="case-info">
+      <h3 class="case-title">Marca viva na rua.</h3>
+      <p class="case-meta">Reconhecimento · OOH + Social</p>
+      <a class="case-cta" href="#case3">Abrir projeto <span aria-hidden="true">→</span></a>
+    </div>
+  </article>
+</section>
+
+
+<section class="clubeset">
+  <div class="left">
+    <h1>exemplo.</h1>
+    <p>Toda semana, uma dose de visão afiada. No Clube Setesete você só recebe as tendências que realmente importam.</p>
+    <p><strong class="strong">Toda Quarta, às 07:07!</strong></p>
+  </div>
+
+  <form class="right">
+    <label for="name">Seu Nome *</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">E-mail *</label>
+    <input type="email" id="email" name="email" required>
+
+    <button type="submit">Entrar no Clube!</button>
+  </form>
+</section>
+
+
+<section class="contact-invite" id="IDEIA">
+  <p class="invite-top">Quer saber até onde sua marca pode ir?</p>
+  <h2 class="invite-title">
+    Troca uma ideia <span>com a gente.</span>
+  </h2>
+  <p class="invite-sub">
+    A gente ouve, entende e monta uma proposta feita pra você — sem fórmula pronta.
+  </p>
+</section>
+
+
+<section class="quote-wrap">
+  <div class="quote-card">
+    <form id="quoteForm" class="quote-form">
+      <div class="q-field">
+        <label for="q-name">Seu Nome <span class="req">*</span></label>
+        <input id="q-name" name="name" type="text" required>
+      </div>
+
+      <div class="q-field">
+        <label for="q-email">E-mail para contato <span class="req">*</span></label>
+        <input id="q-email" name="email" type="email" required>
+      </div>
+
+      <div class="q-field">
+        <label for="q-whats">WhatsApp (com ddd) <span class="req">*</span></label>
+        <input id="q-whats" name="whatsapp" type="tel" required>
+      </div>
+
+      <fieldset class="q-field2">
+        <legend>O que você precisa? <span class="req">*</span></legend>
+
+        <label class="q-check">
+          <input type="checkbox" name="needs" value="Identidade Visual"> Identidade Visual
+        </label>
+
+        <label class="q-check">
+          <input type="checkbox" name="needs" value="Criação de Nome"> Criação de Nome
+        </label>
+
+        <label class="q-check">
+          <input type="checkbox" name="needs" value="Campanha de Lançamento"> Campanha de Lançamento
+        </label>
+
+        <label class="q-check">
+          <input type="checkbox" name="needs" value="Gestão de Redes"> Gestão de Redes
+        </label>
+
+        <label class="q-check">
+          <input type="checkbox" name="needs" value="Website"> Website
+        </label>
+
+        <label class="q-check">
+          <input type="checkbox" name="needs" value="Outro"> Outro
+        </label>
+      </fieldset>
+
+      <button class="q-btn" type="submit">Solicitar Orçamento</button>
+    </form>
+  </div>
+</section>
+
+
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-locations">
+      <div class="footer-col">
+        <h3>Curitiba</h3>
+        <p>Edifício Providence<br>
+        Av. Visc. de Guarapuava, 2423<br>
+        80060-060</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>São Paulo</h3>
+        <p>G4 Hub<br>
+        R. Olímpíadas, 205 – Vila Olímpia<br>
+        04551-000</p>
+      </div>
+    </div>
+
+    <div class="footer-brand">
+      <img width="330px" height="330px"   src="img/logoexemplo23.png" alt="Setesete Logo" class="footer-logo">
+    </div>
+  </div>
+</footer>
+
+
+
+  <a href="#contato" class="wa" aria-label="Fale no WhatsApp"><svg style="color: #f2f2f2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z"/></svg></a>
+
+<button class="toTop" aria-label="Voltar ao topo">
+  <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+    <path d="M12 5l7 7-1.4 1.4L13 9.8V19h-2V9.8L6.4 13.4 5 12z" fill="currentColor"/>
+  </svg>
+</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

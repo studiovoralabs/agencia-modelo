@@ -1,0 +1,223 @@
+/* ===========================
+   RESPONSIVO — TABLET & CELULAR
+   (cole no final do styles.css)
+   =========================== */
+
+/* ---------- Tablet (601–1024px) ---------- */
+@media (min-width: 601px) and (max-width: 1024px){
+
+  /* NAV */
+  .nav{ padding: 14px clamp(16px, 4vw, 32px); }
+  .logo{ font-size: 1.25rem; }
+
+  /* MENU overlay (garante 1 coluna em tablet) */
+  .menu{
+    grid-template-columns: 1fr !important;
+    backdrop-filter: blur(10px) saturate(130%);
+  }
+  .menu__inner{ border-right: 0; }
+  .menu__list{ margin-top: 120px; gap: 16px; }
+  .menu__footer{ gap: 16px; }
+
+  /* HERO */
+  .hero{ padding: clamp(80px, 12vh, 120px) 5vw; }
+  .hero__video{ width: 78vw; max-width: 820px; opacity: .6; }
+  .hero__inner{ max-width: 960px; }
+  .hero__title{ font-size: clamp(1.6rem, 4.8vw, 2.6rem); }
+
+  /* MANIFESTO */
+  .manifesto__wrap{
+    grid-template-columns: 1fr; gap: 24px; min-height: auto;
+  }
+  .m-arcs .arc{ width: min(70vmin, 520px); height: min(70vmin, 520px); opacity: .4; }
+
+  /* GROW (imagem deixa de ser sticky no tablet curto) */
+  .grow__wrap{
+    grid-template-columns: 1fr;
+  }
+  .grow__media{ position: relative; top: 0; }
+  .grow__img{ max-width: 520px; margin: 0 auto; }
+
+  /* FULLSEVEN (3 col → 1 col empilhada) */
+  .fs-wrap{
+    grid-template-columns: 1fr; gap: 28px; max-width: 980px;
+  }
+  .fs-left{ order: 1; }
+  .fs-orb{ order: 2; max-width: 560px; margin: 0 auto; }
+  .fs-accordion{ order: 3; }
+
+  /* SERVICES (grade 7 → 3 col) */
+  .services__wrap{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* DELIVER */
+  .deliver{ padding: clamp(64px, 10vh, 120px) 4vw; }
+  .deliver__stage{ max-width: 960px; margin: 0 auto; }
+  .deliver__title{ font-size: clamp(1.8rem, 6.5vw, 3.4rem); }
+  .deliver__sub{ top: 14vh; font-size: clamp(.95rem, 1.9vw, 1.1rem); }
+
+  /* CASES (cards grandes empilhados) */
+  .cases{ grid-template-columns: 1fr; }
+  .case-card{ min-height: 380px; aspect-ratio: 16/9; }
+
+  /* CLUBESET (lado a lado → coluna) */
+  .clubeset{
+    flex-direction: column; align-items: stretch; gap: 20px;
+    padding: 44px 5vw; background-position: center;
+  }
+  .left{ max-width: 100%; }
+  .right{ width: 100%; gap: 10px; }
+  .right input, .right button{ width: 100%; }
+
+  /* FORM ORÇAMENTO */
+  .quote-card{ padding: 0 0; }
+  .quote-form{ display: grid; gap: 14px; }
+  .q-field, .q-field2{ width: 100%; }
+  .q-btn{ width: 100%; padding: 14px 16px; }
+
+  /* FOOTER */
+  .site-footer .footer-inner{
+    display: grid; gap: 20px;
+  }
+  .footer-locations{
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px;
+  }
+  .footer-brand .footer-logo{ width: 220px; height: auto; }
+}
+
+/* ---------- Celular grande (431–600px) ---------- */
+@media (min-width: 431px) and (max-width: 600px){
+
+  .nav{ padding: 12px 16px; }
+  .logo{ font-size: 1.15rem; }
+
+  .menu{ grid-template-columns: 1fr !important; }
+  .menu__list{ margin-top: 90px; gap: 14px; }
+
+  .hero{ padding: 76px 5vw; }
+  .hero__video{ width: 86vw; max-width: 640px; }
+  .hero__title{ font-size: clamp(1.4rem, 5.8vw, 2.1rem); }
+
+  .m-title{ font-size: 28px; }
+  .m-copy p{ font-size: 16px; }
+  .m-arcs{ opacity: .35; }
+
+  .grow{ padding: 56px 5vw; }
+  .grow__wrap{ grid-template-columns: 1fr; }
+  .grow__img{ max-width: 460px; margin: 0 auto; }
+
+  .fs-wrap{ grid-template-columns: 1fr; }
+  .fs-orb{ max-width: 520px; margin: 0 auto; }
+
+  .services__wrap{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .deliver{ padding: 56px 4vw; }
+  .deliver__title{ font-size: clamp(1.6rem, 7vw, 2.6rem); }
+  .deliver__sub{ top: 12vh; }
+
+  .cases{ grid-template-columns: 1fr; }
+  .case-card{ min-height: 320px; aspect-ratio: 16/10; }
+  .case-info{ max-width: 520px; }
+
+  .clubeset{ padding: 40px 5vw; gap: 18px; }
+  .right input, .right button{ height: 46px; }
+
+  .quote-form{ gap: 12px; }
+  .q-field label, .q-field2 legend{ font-size: .95rem; }
+  .q-btn{ height: 48px; }
+
+  .footer-locations{ grid-template-columns: 1fr; }
+  .footer-logo{ width: 200px !important; }
+}
+
+/* ---------- Celular pequeno (até 430px) ---------- */
+@media (max-width: 430px){
+
+  /* Tocar com o polegar (hit area) */
+  .btn, .case-cta, .q-btn{ min-height: 44px; }
+
+  .nav{ padding: 10px 14px; }
+  .logo{ font-size: 1.05rem; }
+
+  .menu{ grid-template-columns: 1fr !important; }
+  .menu__list{ margin-top: 80px; gap: 12px; }
+  .menu__footer{ flex-direction: row; align-items: center; gap: 12px; }
+
+  .hero{ padding: 68px 5vw; min-height: 86vh; }
+  .hero__video{ width: 92vw; max-width: 520px; opacity: .62; }
+  .hero__inner{ text-align: center; }
+  .hero__title{ font-size: clamp(1.2rem, 7vw, 1.8rem); }
+
+  .manifesto{ padding: 56px 5vw; }
+  .manifesto__wrap{ grid-template-columns: 1fr; gap: 18px; }
+  .m-title{ font-size: 26px; }
+  .m-copy p{ font-size: 15px; }
+
+  .grow { padding: 48px 5vw; }
+  .grow__wrap{ grid-template-columns: 1fr; }
+  .grow__media{ position: relative; top: 0; }
+  .grow__img{ max-width: 380px; margin: 0 auto;  }
+  .grow .btn--ghost{ display: flex; justify-content: center; align-items: center; }
+
+  .fullseven{ padding: 56px 5vw; }
+  .fs-wrap{ grid-template-columns: 1fr; gap: 22px; }
+  .fs-title{ font-size: clamp(1.4rem, 7vw, 1.8rem); }
+  .fs-orb{ max-width: 420px; margin: 0 auto; }
+  .acc-item{ padding: 16px 18px; }
+
+  .services{ padding: 44px 4vw; }
+  .services__wrap{ grid-template-columns:repeat(2,1fr); }
+  .svc-col{ padding: 18px 12px; }
+  .svc-head{ font-size: 1rem; }
+  .svc-item{ font-size: .98rem; }
+
+  .deliver{ padding: 48px 4vw; }
+  .deliver__stage{ max-width: 100%; }
+  .deliver__title{ font-size: clamp(1.35rem, 8.5vw, 2rem); }
+  .deliver__sub{ top: 10vh; font-size: 1rem; }
+
+  .cases{ padding: 18px 4vw; gap: 16px; }
+  .case-card{ min-height: 260px; aspect-ratio: 4/3; border-radius: 18px; }
+  .case-info{ padding: 18px; }
+  .case-title{ font-size: clamp(1.1rem, 5.5vw, 1.3rem); }
+
+  .clubeset{
+    gap: 14px; padding: 36px 4vw;
+    background: linear-gradient(0deg, rgba(0,0,0,.55), rgba(0,0,0,.55)), url('img/parte4.jpg') center/cover no-repeat;
+  }
+  .right{ gap: 10px; display: flex;
+    flex-direction: column; font-size: 12px; }
+  .right input, .right button{ width: 100%; height: 44px; font-size: 12px; }
+
+  .quote-wrap{ padding: 0 4vw; margin-bottom: 40px;}
+  .quote-form{ gap: 10px; }
+  .q-field input{ width: 100%; }
+  .q-field2{ padding: 10px 10px 4px; }
+  .q-check{ display: block; padding: 6px 0; }
+
+  .site-footer .footer-inner{ gap: 14px; }
+  .footer-locations{ grid-template-columns: 1fr; gap: 12px; }
+  .footer-brand .footer-logo{ width: 180px; height: auto; }
+}
+
+/* ---------- Safe areas iOS (opcional) ---------- */
+@supports (padding: max(0px)){
+  @media (max-width: 1024px){
+    body{ padding-left: max(0px, env(safe-area-inset-left)); padding-right: max(0px, env(safe-area-inset-right)); }
+    .nav{ padding-top: max(10px, env(safe-area-inset-top)); }
+  }
+}
+
+
+/* Esconde overlays/controles no iOS Safari (apenas mobile/tablet) */
+@media (max-width: 1024px){
+  video::-webkit-media-controls-start-playback-button{ display:none !important; }
+  video::-webkit-media-controls-overlay-play-button{ display:none !important; }
+  video::-webkit-media-controls { display:none !important; }
+}
+
+/* Garantias visuais */
+video{ max-width:100%; height:auto; object-fit:cover; }
